@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>DashboardPage</class>
+ <widget class="QWidget" name="DashboardPage">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1200</width><height>750</height></rect>
+  </property>
+  <property name="windowTitle"><string>Dashboard</string></property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#DashboardPage { background-color: #1C1C2E; }</string>
+  </property>
+
+  
+  <layout class="QHBoxLayout" name="rootLayout">
+   <property name="spacing"><number>0</number></property>
+   <property name="leftMargin"><number>0</number></property>
+   <property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property>
+   <property name="bottomMargin"><number>0</number></property>
+
+   
+   <item>
+    <widget class="QWidget" name="sidebar">
+     <property name="minimumWidth"><number>220</number></property>
+     <property name="maximumWidth"><number>220</number></property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#sidebar { background-color: #16162A; border-right: 1px solid #2E2E4E; }</string>
+     </property>
+
+     <layout class="QVBoxLayout" name="sidebarLayout">
+      <property name="spacing"><number>0</number></property>
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+
+      
+      <item>
+       <widget class="QWidget" name="brandWidget">
+        <property name="minimumHeight"><number>68</number></property>
+        <property name="maximumHeight"><number>68</number></property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#brandWidget { background-color: #C0392B; }</string>
+        </property>
+        <layout class="QVBoxLayout" name="brandLayout">
+         <property name="leftMargin"><number>20</number></property>
+         <property name="topMargin"><number>10</number></property>
+         <property name="rightMargin"><number>20</number></property>
+         <property name="bottomMargin"><number>10</number></property>
+         <property name="spacing"><number>2</number></property>
+         <item>
+          <widget class="QLabel" name="labelBrandName">
+           <property name="text"><string>KU RFID</string></property>
+           <property name="styleSheet">
+            <string notr="true">color: #FFFFFF; font-size: 17px; font-weight: 800; letter-spacing: 2px; background: transparent;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelBrandSub">
+           <property name="text"><string>Kathmandu University</string></property>
+           <property name="styleSheet">
+            <string notr="true">color: rgba(255,255,255,0.65); font-size: 10px; background: transparent;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+
+      
+      <item><spacer name="sbSp1"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>0</width><height>12</height></size></property></spacer></item>
+
+      
+      <item>
+       <widget class="QLabel" name="labelMenuSection">
+        <property name="text"><string>  MAIN MENU</string></property>
+        <property name="styleSheet">
+         <string notr="true">color: #3A3A6A; font-size: 10px; font-weight: 700; letter-spacing: 2px; padding: 4px 18px; background: transparent;</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnOverview">
+        <property name="text"><string>   📊   Overview</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="checked"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnAttendance">
+        <property name="text"><string>   ✅   Attendance</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnCafeteria">
+        <property name="text"><string>   🍽   Cafeteria</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnStudents">
+        <property name="text"><string>   👥   Students</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnReports">
+        <property name="text"><string>   📈   Reports</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnRegister">
+        <property name="text"><string>   🪪   Register Card</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="navBtnScan">
+        <property name="text"><string>   📟   Scan Terminal</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="checkable"><bool>true</bool></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; border-left:3px solid transparent; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#24243A; color:#E0E0F8; }
+QPushButton:checked { background-color:#2E1F3E; color:#FFFFFF; border-left:3px solid #C0392B; font-weight:600; }</string>
+        </property>
+       </widget>
+      </item>
+
+      
+
+      
+      <item>
+       <spacer name="sbSpacer">
+        <property name="orientation"><enum>Qt::Vertical</enum></property>
+        <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+       </spacer>
+      </item>
+
+      
+      <item>
+       <widget class="QFrame" name="sidebarDivider">
+        <property name="frameShape"><enum>QFrame::HLine</enum></property>
+        <property name="frameShadow"><enum>QFrame::Sunken</enum></property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #2E2E4E; border: none; margin: 0 14px;</string>
+        </property>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QPushButton" name="pushButtonLogout">
+        <property name="text"><string>   🚪   Logout</string></property>
+        <property name="minimumHeight"><number>46</number></property>
+        <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color:transparent; color:#8080A8; border:none; text-align:left; padding-left:18px; font-size:13px; border-radius:0; }
+QPushButton:hover { background-color:#3A1A1A; color:#E74C3C; }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item><spacer name="sbSp2"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>0</width><height>14</height></size></property></spacer></item>
+
+     </layout>
+    </widget>
+   </item>
+
+   
+   <item>
+    <widget class="QWidget" name="contentArea">
+     <property name="styleSheet">
+      <string notr="true">QWidget#contentArea { background-color: #1C1C2E; }</string>
+     </property>
+
+     <layout class="QVBoxLayout" name="contentAreaLayout">
+      <property name="spacing"><number>0</number></property>
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+
+      
+      <item>
+       <widget class="QWidget" name="topBar">
+        <property name="minimumHeight"><number>58</number></property>
+        <property name="maximumHeight"><number>58</number></property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#topBar { background-color: #20203A; border-bottom: 1px solid #2E2E4E; }</string>
+        </property>
+        <layout class="QHBoxLayout" name="topBarLayout">
+         <property name="leftMargin"><number>28</number></property>
+         <property name="topMargin"><number>0</number></property>
+         <property name="rightMargin"><number>28</number></property>
+         <property name="bottomMargin"><number>0</number></property>
+         <item>
+          <widget class="QLabel" name="labelTopTitle">
+           <property name="text"><string>RFID Student Attendance &amp; Cafeteria System</string></property>
+           <property name="styleSheet">
+            <string notr="true">color: #FFFFFF; font-size: 15px; font-weight: 700; background: transparent;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="topBarSpacer">
+           <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           <property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelTopDate">
+           <property name="text"><string>Wed, 10 Jun 2026</string></property>
+           <property name="styleSheet">
+            <string notr="true">color: #5050A0; font-size: 13px; background: transparent;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+
+      
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex"><number>0</number></property>
+
+        
+        </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>
