@@ -1,5 +1,6 @@
 #include <QApplication>
 #include "MainWindow.h"
+#include "SerialManager.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,5 +11,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.show();
+
+    SerialManager manager;
     return app.exec();
 }

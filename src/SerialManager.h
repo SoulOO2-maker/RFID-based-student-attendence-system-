@@ -6,6 +6,7 @@
 
 #include <QObject>
 #include <QSerialPort>
+#include <QSerialPortInfo>
 
 class SerialManager : public QObject
 {
@@ -13,6 +14,13 @@ class SerialManager : public QObject
 public:
     explicit SerialManager(QObject *parant = nullptr);
 
+signals:
+    void cardScanned(const QString &uid);
+
+private slots:
+    void onDataRecived();
+
 private:
     QSerialPort serial;
+    QByteArray buffer;
 };
