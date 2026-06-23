@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QDebug>
 #include "MainWindow.h"
+#include "SerialManager.h"
 
 int main(int argc, char *argv[])
 {
@@ -13,5 +14,6 @@ int main(int argc, char *argv[])
 
     qDebug() << "Window should be visible now!";
 
+    SerialManager manager;
     return app.exec();
 }
